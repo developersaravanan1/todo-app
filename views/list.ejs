@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="empty"></div>
+    <div class="box" id="box">
+        <h1>Todo list</h1>
+    </div>
+    <div class="box">
+        
+        <form action="/" method="POST">
+            <input type="text" name="task" placeholder="Enter the task" required>
+            <button type="submit">+</button>
+
+        </form>
+        <% for (var i=0 ; i < ejes.length ; i++){ %>
+            <div class="item">
+                <input type="checkbox" id="check">
+                <p><%= ejes[i] %></p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
